@@ -1,0 +1,172 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Login related styles */
+.login-container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+.login-form {
+    margin: auto;
+    width: 450px;
+    box-shadow: 1px 3px 7px rgba(0, 0, 0, 0.3);
+    background-color: #f0c806;
+    padding: 10px 24px;
+    border-radius: 8px;
+}
+.login-form input {
+    height: 35px;
+    width: 100%;
+    margin: 10px auto;
+    border-radius: 4px;
+    padding: 0 5px;
+    border: 1px solid #bdbdbd;
+    outline: none;
+    transition: all 0.3s;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
+}
+.login-form input:hover {
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
+}
+.login-form input::placeholder {
+    color: #111111;
+}
+
+/* Note related styles */
+.app-container {
+    background-color: bisque;
+    min-height: 100vh;
+}
+.note-container {
+    max-width: 980px;
+    margin: 0 auto;
+}
+.new-note-button {
+    width: 200px;
+    display: block;
+    margin: 0 auto 20px;
+    background-color: white;
+    padding: 10px 32px;
+    border: 1px solid #e0e0e0;
+    font-size: 26px;
+    outline: 0;
+    transition: all 0.3s;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    color: #1e1e1e;
+    font-family: "Caveat", cursive;
+}
+.notes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+}
+.note {
+    background-color: #f0c806;
+    margin: 0 10px 20px;
+    width: 280px;
+    border-radius: 8px;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s;
+    cursor: pointer;
+    color: #1e1e1e;
+}
+.note .note-body {
+    outline: 0;
+    font-family: "Caveat", cursive;
+    padding: 10px 16px 16px;
+    font-size: 24px;
+}
+.notes .note:hover {
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
+}
+.single-note .note {
+    margin: 0;
+    width: 100%;
+}
+.single-note .note .note-body {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    border: none;
+    resize: none;
+    padding: 20px;
+}
+.single-note .note .note-body::placeholder {
+    color: #111111;
+}
+.note .note-buttons {
+    opacity: 0;
+}
+.note:hover .note-buttons {
+    opacity: 1;
+}
+.note-buttons {
+    text-align: right;
+    padding: 10px;
+    display: flex;
+    justify-content: end;
+    gap: 5px;
+}
+.note-buttons .cancel-button {
+    padding: 6px 10px;
+    background-color: #e0e0e0;
+    color: inherit;
+    display: inline-block;
+    border: 1px solid #bdbdbd;
+    font-size: 16px;
+    transition: all 0.3s;
+    cursor: pointer;
+    text-decoration: none;
+}
+.note-buttons .cancel-button:hover {
+    background-color: #ffffff;
+}
+.note-buttons .submit-button {
+    padding: 6px 10px;
+    background-color: #452900;
+    border: 1px solid #212000;
+    color: white;
+    display: inline-block;
+    font-size: 16px;
+    transition: all 0.3s;
+    cursor: pointer;
+    text-decoration: none;
+}
+.note-buttons .submit-button:hover {
+    background-color: #704300;
+}
+.note-buttons .edit-button {
+    padding: 6px 10px;
+    border-radius: 4px;
+    color: white;
+    background-color: #006bd6;
+    border: 1px solid #0059b3;
+    transition: all 0.3s;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.note-buttons .edit-button:hover {
+    background-color: #0059b3;
+}
+.note-buttons .delete-button {
+    padding: 6px 10px;
+    border-radius: 4px;
+    color: white;
+    background-color: #c93f3f;
+    border: 1px solid #a82f2f;
+    transition: all 0.3s;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.note-buttons .delete-button:hover {
+    background-color: #a82f2f;
+}
